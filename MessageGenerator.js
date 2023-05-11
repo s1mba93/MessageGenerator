@@ -18,19 +18,25 @@ for (let prop in collection) {
 
     switch (prop) {
         case 'sign':
-            message.push(`Your sign right now is a ${collection[prop][optionId]}`);
+            message.push(`Your sign right now is a ${collection[prop][optionId]}.`);
             break
         case 'fortune':
-            message.push(`You have ${collection[prop][optionId]} right now`);
+            message.push(`You have ${collection[prop][optionId]} right now.`);
             break
         case 'advice':
             message.push(`you should ${collection[prop][optionId]}`);
             break
         default:
-            message.push('There was an error. Please try again');
+            message.push('There was an error. Please try again.');
     }
 }
 
+//Function to output the message in a readable format
+function readable(arr) {
+    const formatted = message.join('\n');
+    console.log(formatted);
 
+}
 
+readable(message);
 
