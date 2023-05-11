@@ -1,4 +1,4 @@
-#Message Generator
+Message Generator
 ==================
 
 This is a simple program as part of my codecademy study. 
